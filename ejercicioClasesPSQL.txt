@@ -1,0 +1,11 @@
+1.- CREATE DATABASE movies;
+2.- \c movies
+3.- CREATE TABLE movie(id SERIAL, name varchar(50));
+4.- INSERT INTO movie (name) VALUES ('El rey leon');
+5.- INSERT INTO movie (name) VALUES ('Terminator II')
+6.- ALTER TABLE movie ADD COLUMN año integer;
+7.- ALTER TABLE movie ADD COLUMN genero varchar(50)
+8.- UPDATE movie set año = 1984;
+9.- UPDATE movie set genero = 'Drama';
+10.- DELETE FROM movie where name = 'Terminator II';
+11.- INSERT INTO movie (name, año, genero) VALUES ('Crimen Perfecto, 2000, 'Crimen');

@@ -1,0 +1,27 @@
+1.- INSERT INTO movie (name, año, genero) VALUES ('Matrix',2000,'Accion');
+INSERT INTO movie (name, año, genero) VALUES ('Star Wars VIII',2017,'Accion');
+INSERT INTO movie (name, año, genero) VALUES ('El Pradrino',1970,'Drama');
+INSERT INTO movie (name, año, genero) VALUES ('Pulp Fiction',1995,'Suspenso');
+INSERT INTO movie (name, año, genero) VALUES ('Kill Bill',2002,'Accion');
+
+2.- SELECT * FROM movie ORDER BY name ASC LIMIT 3;
+
+3.- SELECT * FROM movie ORDER BY año DESC LIMIT 3;
+
+4.- select count(*) from movie;
+
+5.- select año, count (año) from movie group by año;
+
+6.- ALTER TABLE movie ADD COLUMN categoria varchar(50);
+
+7.- INSERT INTO movie (categoria) VALUES ('Accion') where name in ('Matrix','Star Wars VIII','Kill Bill');
+
+INSERT INTO movie (categoria) VALUES ('Drama') where name = 'El Padrino';
+
+INSERT INTO movie (categoria) VALUES ('Suspenso') where name = 'Pulp Fiction';
+
+8.- select distinct categoria from movie;
+
+
+
+

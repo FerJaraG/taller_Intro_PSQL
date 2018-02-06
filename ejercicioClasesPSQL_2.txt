@@ -1,0 +1,6 @@
+1.- SELECT * FROM facilities;
+2.- SELECT (name,membercost) FROM facilities;
+3.- SELECT (name,membercost,monthlymaintenance) FROM facilities WHERE membercost > 0
+4.- SELECT (id,name,membercost,monthlymaintenance) FROM facilities WHERE membercost > 0 and (membercost < monthlymaintenance/50.0);
+5.- SELECT * FROM facilities where name like '%Tennis%';
+6.- SELECT * FROM facilities where id in (1,5);
